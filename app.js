@@ -13,7 +13,7 @@ app.use(function *(next) {
 // response
 
 app.use(function *() {
-  this.body = 'Thanks for your ' + this.method + '\n';
+  this.body = 'You had performed ' + this.method + '\n';
 });
 
 app.listen(3000);
